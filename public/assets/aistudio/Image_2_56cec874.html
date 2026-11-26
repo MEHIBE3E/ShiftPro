@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="cs"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#4cd7f6", "on-tertiary-fixed-variant": "#004e5c", "on-secondary": "#3c0091", "on-background": "#e4e1e8", "on-primary": "#1000a9", "surface-variant": "#35343a", "primary-fixed": "#e1e0ff", "surface-container": "#1f1f24", "tertiary-fixed-dim": "#4cd7f6", "tertiary-fixed": "#acedff", "on-tertiary-container": "#002f38", "surface-container-low": "#1b1b20", "secondary-fixed": "#e9ddff", "secondary": "#d0bcff", "secondary-fixed-dim": "#d0bcff", "on-surface": "#e4e1e8", "secondary-container": "#571bc1", "on-secondary-fixed": "#23005c", "inverse-primary": "#494bd6", "outline": "#908fa0", "tertiary-container": "#009eb9", "primary": "#c0c1ff", "surface-dim": "#131318", "surface-container-high": "#2a292f", "primary-container": "#8083ff", "on-error": "#690005", "surface-bright": "#39393e", "on-tertiary": "#003640", "surface-container-highest": "#35343a", "surface": "#131318", "inverse-surface": "#e4e1e8", "on-secondary-fixed-variant": "#5516be", "inverse-on-surface": "#303035", "on-tertiary-fixed": "#001f26", "on-error-container": "#ffdad6", "on-primary-fixed-variant": "#2f2ebe", "primary-fixed-dim": "#c0c1ff", "on-secondary-container": "#c4abff", "surface-tint": "#c0c1ff", "surface-container-lowest": "#0e0e13", "outline-variant": "#464554", "on-surface-variant": "#c7c4d7", "on-primary-container": "#0d0096", "error": "#ffb4ab", "background": "#131318", "error-container": "#93000a", "on-primary-fixed": "#07006c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "margin": "1rem", "gutter": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"] }, "fontSize": { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><img alt="Logo Směny App" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WgNcQQKJ9W_8hW5isIP9Wwbwuo_Lxva-dXacxsOc_y-_Fth3AIC_H-RtNZyQ3O9AecUYonOi61iC9wYq88wREC8ydK8cb3NioJtZzMYTQVLu7LKcunaqD5QhjI9SbIFG9vT0DOmfVz59znYVxOupY_naYZj3wMo0RaFfN3pgVSfAVJWzTUU4yzzQ02ZJ0dzyot_VdRUPB4ZuSt1SPjTewnQ7ZpBLVLqO2q-Td0etq8L9DOnG71wbpYnCs"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface leading-tight">Směny</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Přehled</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high"><span class="material-symbols-outlined text-tertiary text-[14px]">sync</span><span class="font-label-sm text-label-sm text-tertiary">Synchronizováno</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-lg"><!-- 1. Upozornění na neukončenou směnu (Top priority alert, jantar/indigo) -->
+<div class="w-full rounded-2xl bg-[#1e1b2e] border border-[#a855f7]/30 p-4 shadow-lg flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#6366f1]/20 border border-[#818cf8]/30 text-[#a5b4fc] flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<span class="text-[11px] font-bold uppercase tracking-wider text-[#f59e0b]">Vyžaduje pozornost</span>
+<span class="text-[11px] text-on-surface-variant font-medium">Včera</span>
+</div>
+<h3 class="text-[15px] text-on-surface font-bold mt-0.5 leading-snug">Směna z včerejška (14. 5.) nebyla ukončena</h3>
+<p class="text-[13px] text-on-surface-variant mt-1 leading-normal">Chybí zaznamenat skutečný konec ranní směny.</p>
+<div class="mt-3 flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary text-on-primary text-[13px] font-bold active:scale-[0.98] transition-all min-h-[40px] shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span>Opravit čas</span>
+</button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-variant text-on-surface-variant hover:text-on-surface text-[13px] font-medium active:scale-[0.98] transition-all min-h-[40px]" type="button">
+<span>Později</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 2. Měsíční přehled (Odpracováno / cíl + Orientační výdělek druhořadý) -->
+<section class="w-full rounded-2xl bg-surface-container p-4 shadow-md flex flex-col gap-3.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_month</span>
+<h2 class="text-[16px] font-bold text-on-surface tracking-tight">Měsíční přehled (Květen 2025)</h2>
+</div>
+<span class="text-[11px] font-medium text-on-surface-variant px-2 py-0.5 rounded-full bg-surface-container-high">Fond 160 h</span>
+</div>
+<!-- Odpracováno s progress barem -->
+<div>
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5 font-['Manrope'] tabular-nums">
+<span class="text-[28px] font-extrabold text-on-surface tracking-tight">138.5</span>
+<span class="text-[14px] font-semibold text-on-surface-variant">/ 160 h</span>
+</div>
+<div class="flex items-center gap-1 font-['Manrope'] tabular-nums">
+<span class="text-[14px] font-bold text-primary">86.5 %</span>
+</div>
+</div>
+<div class="w-full h-2.5 rounded-full bg-surface-variant overflow-hidden mt-1.5">
+<div class="h-full rounded-full bg-primary transition-all duration-500" style="width: 86.5%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1 text-[11px] text-on-surface-variant">
+<span>Zbývá 21.5 h do fondu</span>
+<span>18 z 21 směn</span>
+</div>
+</div>
+<!-- Orientační výdělek - druhořadý s menším písmem -->
+<div class="pt-3 border-t border-outline-variant/30 flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-[11px] text-on-surface-variant uppercase tracking-wider font-medium">Orientační čistá mzda</span>
+<div class="flex items-baseline gap-1 font-['Manrope'] tabular-nums mt-0.5">
+<span class="text-[18px] font-bold text-secondary">32 450</span>
+<span class="text-[12px] font-semibold text-secondary">Kč</span>
+</div>
+</div>
+<div class="text-right flex flex-col items-end">
+<span class="text-[11px] text-tertiary flex items-center gap-0.5 font-medium font-['Manrope'] tabular-nums">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+        +3 200 Kč příplatky
+      </span>
+<span class="text-[10px] text-on-surface-variant/80 mt-0.5">(vč. nočních a víkendů)</span>
+</div>
+</div>
+</section>
+<!-- 3. Rychlé akce (FAB / Dock) -->
+<div class="grid grid-cols-2 gap-3">
+<button class="h-12 rounded-xl bg-primary text-on-primary font-bold text-[14px] flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all min-h-[48px]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Zadat směnu</span>
+</button>
+<button class="h-12 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface font-semibold text-[14px] flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all min-h-[48px]" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">document_scanner</span>
+<span>Skenovat rozpis</span>
+</button>
+</div>
+<!-- 4. Nadcházející směny se sémantickým kódováním: Fuchsie [N], Břidlicová volno, Jantar [O] -->
+<section class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<h2 class="text-[16px] font-bold text-on-surface tracking-tight">Nadcházející směny</h2>
+<a class="text-[13px] text-primary font-semibold flex items-center gap-0.5 hover:underline" href="#">
+<span>Zobrazit kalendář</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Zítra: Noční směna [N] ve fuchsiové (#D946EF) -->
+<div class="rounded-2xl bg-surface-container p-3.5 flex items-center justify-between shadow-sm border-l-4 border-[#d946ef]">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="text-[11px] font-bold text-on-surface-variant uppercase">Pá</span>
+<span class="text-[16px] font-extrabold text-on-surface leading-none mt-0.5 font-['Manrope'] tabular-nums">16</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-md bg-[#d946ef]/20 text-[#f0abfc] border border-[#d946ef]/40 text-[11px] font-bold flex items-center justify-center shrink-0 font-['Manrope']">N</span>
+<span class="text-[14px] font-bold text-on-surface truncate">Noční směna</span>
+<span class="material-symbols-outlined text-[15px] text-[#f0abfc]">dark_mode</span>
+</div>
+<p class="text-[12px] text-on-surface-variant mt-0.5 font-['Manrope'] tabular-nums">22:00 – 06:00 (8.0 h)</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-[#d946ef]/20 border border-[#d946ef]/40 text-[#f0abfc] text-[11px] font-bold font-['Manrope'] tabular-nums">
+          +20 % noční
+        </span>
+<span class="text-[11px] text-on-surface-variant mt-1 font-medium">Zítra</span>
+</div>
+</div>
+<!-- Sobota: Volno / Regenerace v neutrální břidlicové (#64748B) -->
+<div class="rounded-2xl bg-surface-container-low/80 p-3.5 flex items-center justify-between shadow-sm opacity-90 border-l-4 border-[#64748b]">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex flex-col items-center justify-center shrink-0">
+<span class="text-[11px] font-bold text-on-surface-variant uppercase">So</span>
+<span class="text-[16px] font-extrabold text-on-surface leading-none mt-0.5 font-['Manrope'] tabular-nums">17</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-md bg-[#64748b]/20 text-[#94a3b8] border border-[#64748b]/40 text-[11px] font-bold flex items-center justify-center shrink-0 font-['Manrope']">V</span>
+<span class="text-[14px] font-semibold text-on-surface-variant truncate">Volno / Regenerace</span>
+<span class="material-symbols-outlined text-[15px] text-[#94a3b8]">hotel</span>
+</div>
+<p class="text-[12px] text-[#94a3b8] mt-0.5">Bez naplánované směny</p>
+</div>
+</div>
+<div class="shrink-0 pl-2 text-[#94a3b8]">
+<span class="material-symbols-outlined text-[22px]">spa</span>
+</div>
+</div>
+<!-- Pondělí: Odpolední směna [O] v jantaru (#F59E0B) -->
+<div class="rounded-2xl bg-surface-container p-3.5 flex items-center justify-between shadow-sm border-l-4 border-[#f59e0b]">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex flex-col items-center justify-center shrink-0">
+<span class="text-[11px] font-bold text-on-surface-variant uppercase">Po</span>
+<span class="text-[16px] font-extrabold text-on-surface leading-none mt-0.5 font-['Manrope'] tabular-nums">19</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-5 h-5 rounded-md bg-[#f59e0b]/20 text-[#fbbf24] border border-[#f59e0b]/40 text-[11px] font-bold flex items-center justify-center shrink-0 font-['Manrope']">O</span>
+<span class="text-[14px] font-bold text-on-surface truncate">Odpolední směna</span>
+<span class="material-symbols-outlined text-[15px] text-[#fbbf24]">light_mode</span>
+</div>
+<p class="text-[12px] text-on-surface-variant mt-0.5 font-['Manrope'] tabular-nums">14:00 – 22:00 (8.0 h)</p>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="text-[14px] font-bold text-on-surface font-['Manrope'] tabular-nums">1 680 Kč</span>
+<span class="text-[11px] text-on-surface-variant mt-0.5 font-['Manrope'] tabular-nums">Sazba 210 Kč/h</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Dnešní Směna / Živý Tracker v dosahu palce (Dolní třetina obrazovky) -->
+<section class="w-full rounded-2xl bg-surface-container p-4 shadow-xl border border-surface-variant/40 flex flex-col gap-3">
+<div class="flex items-center justify-between gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high">
+<span class="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse"></span>
+<span class="text-[12px] font-bold text-[#34d399]">Ranní směna</span>
+<span class="text-[11px] text-on-surface-variant font-medium font-['Manrope'] tabular-nums">06:00 – 14:30</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-tertiary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">timer</span>
+<span class="text-[11px] font-semibold text-on-surface font-['Manrope'] tabular-nums">Zbývá 1h 48m</span>
+</div>
+</div>
+<div class="flex items-end justify-between pt-1">
+<div>
+<p class="text-[11px] font-bold uppercase tracking-wider text-on-surface-variant">Právě probíhá</p>
+<p class="text-[32px] font-extrabold text-on-surface tracking-tight leading-none mt-1 font-['Manrope'] tabular-nums" id="live-shift-timer">
+        05:42:21
+      </p>
+</div>
+<div class="text-right">
+<span class="text-[11px] text-on-surface-variant block font-medium">Dnešní odhad</span>
+<div class="flex items-baseline justify-end gap-1 font-['Manrope'] tabular-nums">
+<span class="text-[20px] font-bold text-tertiary">1 480</span>
+<span class="text-[12px] font-semibold text-tertiary">Kč</span>
+</div>
+<span class="text-[11px] text-on-surface-variant block font-['Manrope'] tabular-nums">210 Kč/h + příplatky</span>
+</div>
+</div>
+<!-- Hlavní akce min 48dp touch target v dosahu palce: Ukončit (#EF4444) a Pauza -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<button class="h-12 rounded-xl bg-surface-container-highest hover:bg-surface-bright active:scale-[0.98] transition-all flex items-center justify-center gap-2 text-on-surface px-3 min-h-[48px]" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">coffee</span>
+<span class="text-[13px] font-semibold">Pauza (+30 min)</span>
+</button>
+<button class="h-12 rounded-xl bg-[#ef4444] hover:bg-[#dc2626] text-white active:scale-[0.98] transition-all flex items-center justify-center gap-2 px-3 shadow-md min-h-[48px]" type="button">
+<span class="material-symbols-outlined text-[20px]">stop_circle</span>
+<span class="text-[13px] font-bold">Ukončit směnu</span>
+</button>
+</div>
+</section></div>
+<script>
+  // Simple micro-interaction for active ticking timer
+  (function() {
+    let seconds = 18;
+    let minutes = 42;
+    let hours = 5;
+    const timerElem = document.getElementById('live-shift-timer');
+    if (!timerElem) return;
+
+    setInterval(function() {
+      seconds++;
+      if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+          minutes = 0;
+          hours++;
+        }
+      }
+      const pad = (n) => n.toString().padStart(2, '0');
+      timerElem.textContent = pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+    }, 1000);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.35)]" data-active-classes="text-primary-container font-label-md"><div class="flex justify-around items-center h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="prehled" href="#"><div class="px-space-md py-1 rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">home</span></div><span class="font-label-sm text-label-sm tracking-tight">Přehled</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="kalendar" href="#"><div class="px-space-md py-1 rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">calendar_month</span></div><span class="font-label-sm text-label-sm tracking-tight">Kalendář</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="skener-import" href="#"><div class="w-11 h-11 rounded-full bg-primary-container text-on-primary-container shadow-md flex items-center justify-center -mt-3"><span class="material-symbols-outlined text-[24px]">document_scanner</span></div><span class="font-label-sm text-label-sm tracking-tight">Skener</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="vykazy-a-mzdy" href="#"><div class="px-space-md py-1 rounded-full flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">analytics</span></div><span class="font-label-sm text-label-sm tracking-tight">Výkazy</span></a></div></nav></body></html>

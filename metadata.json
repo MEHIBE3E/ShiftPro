@@ -1,0 +1,6 @@
+{
+  "name": "Směny — Evidence směn a výpočet mzdy",
+  "description": "Aplikace pro sledování pracovních směn, měsíční kalendář, import rozpisů a výpočet orientační čisté mzdy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
